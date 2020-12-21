@@ -24,16 +24,16 @@ header nav ul{
     display: flex;
     position: absolute;
     list-style: none;
-    top: 0;
-    right: 0;
     flex-direction: column;
     background-color: #363e40ee;
     height: 100vh;
     align-items: center;
-    width: 50%;
+    width: 100%;
     justify-content: space-evenly;
-    transform: translateX(100%);
+    transform: translateY(-100%);
     transition: all .8s;
+    left: 0;
+    top: 0;
 }
 
 header nav ul.seret{
@@ -366,52 +366,6 @@ img.active{
 	opacity:1;
 }
 
-/* Tentang Saya */
-
-.aboutme{
-    text-align: center;
-    margin: 0 2em;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding-bottom: 1em;
-}
-
-.aboutme_judul{
-    height: 50px;
-    background-color: #283335;
-    padding: 30px;
-}
-
-.aboutme_judul h3{
-    color: white;
-}
-
-.aboutme_desc{
-    color: #363e40;
-}
-.aboutme_desc img{
-    width: 70px;
-    border-radius: 50%;
-    margin-top: -2em;
-}
-
-.aboutme_desc span{
-    display: block;
-    font-size: 20px;
-    margin-top: 1em;
-    font-weight: 600;
-}
-
-.aboutme_desc p{
-    font-size: 13px;
-    margin-top: 13px;
-    padding: 0 1.5em;
-    margin-bottom: 4em;
-}
-
-.aboutme_sosmed img{
-    width: 20px;
-    padding: 2px;
-}
 /* Footer */
 
 footer{
@@ -488,9 +442,6 @@ footer ul{
     padding: 0 70px;
 }
 
-.aboutme{
-    margin: 0 4.5em;
-}
 }
 
   @media only screen and (min-width: 576px) {
@@ -522,9 +473,6 @@ footer ul{
     }
     .testimonials{
         padding: 0 6em;
-    }
-    .aboutme{
-        margin: 0 8em;
     }
     footer{
         padding-top: 40px;
@@ -605,18 +553,7 @@ footer ul{
         justify-content: start;
     }
     .testimonials{
-        padding: 0 1em 0 3em;
-    }
-    .aboutme{
-        margin: 0 2.5em;
-        height: 26em;
-    }
-    .aboutme img{
-        width: 70px;
-    }
-    .aboutme_sosmed a img{
-        width: 20px;
-        padding: 2px;
+        padding: 0 10em;
     }
     aside{
         margin: 100px 0 50px 0;
@@ -668,30 +605,13 @@ footer ul{
         font-weight: 600;
     }
     .testimonials{
-        padding: 0 2em;
-    }
-    .aboutme{
-        margin: 0 3em;
-        height: 26em;
-    }
-    .aboutme_judul{
-        height: 60px;
-    }
-    .aboutme_judul h3{
-        font-size: 2em;
-    }
-    .aboutme img{
-        width: 80px;
+        padding: 0 20em;
     }
     .testimonials_judul h1{
         font-size: 2em;
     }
     nav ul{
         width: 35%;
-    }
-    .aboutme_sosmed a img{
-        width: 25px;
-        padding: 2px;
     }
   }
 
@@ -751,18 +671,6 @@ footer ul{
     }
     .info_desc{
     padding: 0 25em;
-    }
-    .aboutme{
-        margin: 0 5em;
-        height: 29em;
-    }
-    .aboutme img{
-        margin-top: -40px;
-        width: 130px;
-    }
-    .aboutme_desc p {
-        font-size: 15px;
-        padding: 0 4em;
     }
     .footer_sosmed a img{
         width: 30px;
